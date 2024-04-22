@@ -6,13 +6,13 @@ edition = "2021"
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[profile.release]
+opt-level = "s"
+
 [features]
 DEBUG = ["dep:console_error_panic_hook"]
 
 [dependencies]
+console_error_panic_hook = { version = "0.1.7", optional = true }
 ohkami = { version = "0.17", features = ["rt_worker"] }
 worker = { version = "0.1.0" }
-console_error_panic_hook = { version = "0.1.7", optional = true }
-
-[profile.release]
-opt-level = "s"
