@@ -32,5 +32,3 @@ npx wrangler login
 npm run deploy
 ```
 If you register your workers.dev subdomain at this time, it takes some minutes for DNS records to update and it's good time to take a coffee break.
-
-_**note**_ : Up to version 0.17, ohkami only supports HTTP/1.1 and you can only access the published worker by `http://<project-name>.<subdomain>.workers.dev`.
