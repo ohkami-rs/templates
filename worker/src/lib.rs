@@ -1,5 +1,8 @@
 use ohkami::prelude::*;
 
+#[ohkami::bindings]
+struct Bindings;
+
 #[ohkami::worker]
 async fn my_worker() -> Ohkami {
     #[cfg(feature = "DEBUG")]
