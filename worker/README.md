@@ -1,4 +1,4 @@
-# Cloudflare Workers temaplate
+# Cloudflare Workers template
 
 ## Prerequisites
 
