@@ -9,7 +9,6 @@ struct Bindings;
 
 #[ohkami::worker]
 async fn my_worker() -> Ohkami {
-    #[cfg(feature="DEBUG")]
     console_error_panic_hook::set_once();
 
     let fangs = {
@@ -20,6 +19,6 @@ async fn my_worker() -> Ohkami {
     Ohkami::with(fangs, (
         /* in production, `./dist` contents are served by `--assets dist` of `deploy` script in package.json */
 
-        "/hello".GET(api::hello)
+        "/hello".GET(api::hello),
     ))
 }

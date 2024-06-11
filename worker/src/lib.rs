@@ -5,7 +5,7 @@ struct Bindings;
 
 #[ohkami::worker]
 async fn my_worker() -> Ohkami {
-    #[cfg(feature = "DEBUG")]
+    #[cfg(debug_assertions)]
     console_error_panic_hook::set_once();
 
     Ohkami::new((

@@ -7,5 +7,5 @@ compatibility_date = "2024-04-19"
 build = { command = "cargo install -q worker-build && worker-build --release" }
 
 [env.dev]
-build = { command = "cargo install -q worker-build && worker-build --dev -- --features DEBUG" }
+build = { command = "cargo install -q worker-build && worker-build --dev" }
 # Then, run `trunk serve --watch src/ui --open` in another terminal window
