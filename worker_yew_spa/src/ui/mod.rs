@@ -8,8 +8,6 @@ use components::{};
 
 use crate::models::{};
 use yew::prelude::*;
-use yew::suspense::{use_future, Suspense};
-use std::rc::Rc;
 
 
 #[function_component]
