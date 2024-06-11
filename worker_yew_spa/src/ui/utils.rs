@@ -1,11 +1,11 @@
 use yew::UseStateHandle;
 
 
-pub fn set_state<S: Clone>(cards: &UseStateHandle<S>, f: impl FnOnce(&mut S)) {
-    cards.set({
-        let mut cards = (&**cards).clone();
-        f(&mut cards);
-        cards
+pub fn set_state<S: Clone>(state: &UseStateHandle<S>, f: impl FnOnce(&mut S)) {
+    state.set({
+        let mut state = (&**state).clone();
+        f(&mut state);
+        state
     })
 }
 
