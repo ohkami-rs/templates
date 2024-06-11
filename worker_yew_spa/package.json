@@ -1,0 +1,12 @@
+{
+	"name": "worker_yew_spa",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"deploy": "trunk build --release && wrangler deploy --assets dist",
+		"dev": "wrangler dev --env dev --port 8787"
+	},
+	"devDependencies": {
+		"wrangler": "^3.50"
+	}
+}
