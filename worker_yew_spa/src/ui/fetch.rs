@@ -7,8 +7,8 @@ pub struct Client(reqwest::Client);
 
 impl Client {
     const ORIGIN: &'static str = {
-        #[cfg(feature="DEBUG")] {"http://localhost:8787"}
-        #[cfg(not(feature="DEBUG"))] {todo!()}
+        #[cfg(debug_assertions)] {"http://localhost:8787"}
+        #[cfg(not(debug_assertions))] {todo!()}
     };
 }
 
