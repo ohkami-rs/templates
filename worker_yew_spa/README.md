@@ -13,7 +13,7 @@ See https://github.com/kana-rus/ohkami-yew-todo for a working example!
 ## Setup
 
 ```sh
-npm create cloudflare ./path/to/project-dir -- --template https://github.com/kana-rus/ohkami-templates/worker_yew_spa
+npm create cloudflare ./path/to/project-dir -- --template https://github.com/ohkami-rs/ohkami-templates/worker_yew_spa
 ```
 ```sh
 cd ./path/to/project-dir
