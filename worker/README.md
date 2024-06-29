@@ -10,7 +10,7 @@ In addition, `wasm-opt` is recommended to be installed.
 ## Setup
 
 ```sh
-npm create cloudflare ./path/to/project-dir -- --template https://github.com/kana-rus/ohkami-templates/worker
+npm create cloudflare ./path/to/project-dir -- --template https://github.com/ohkami-rs/ohkami-templates/worker
 ```
 ```sh
 cd ./path/to/project-dir
