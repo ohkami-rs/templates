@@ -11,5 +11,5 @@ opt-level = "s"
 
 [dependencies]
 console_error_panic_hook = { version = "0.1.7" }
-ohkami = { version = "0.19", features = ["rt_worker"] }
+ohkami = { version = "0.20", features = ["rt_worker"] }
 worker = { version = "0.3" }
