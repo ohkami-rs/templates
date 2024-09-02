@@ -13,7 +13,7 @@ async fn my_worker() -> Ohkami {
 
     let fangs = {
         #[cfg(debug_assertions)]
-        ohkami::builtin::fang::CORS::new("http://127.0.0.1:8080")
+        ohkami::fang::CORS::new("http://127.0.0.1:8080")
     };
 
     Ohkami::with(fangs, (
