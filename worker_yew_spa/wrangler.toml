@@ -8,4 +8,4 @@ build = { command = "cargo install -q worker-build && worker-build --release" }
 
 [env.dev]
 build = { command = "cargo install -q worker-build && worker-build --dev" }
-# Then, run `trunk serve --watch src/ui --open` in another terminal window
+# then run `trunk serve --watch src/ui --open` in another terminal window

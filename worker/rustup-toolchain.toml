@@ -1,0 +1,6 @@
+# workaround for LinkError on deploying with rustc >= 1.82
+
+[toolchain]
+channel    = "1.81"
+targets    = ["wasm32-unknown-unknown"]
+components = ["cargo"]
