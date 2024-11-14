@@ -2,27 +2,25 @@
 
 ## Prerequisites
 
-- Latest Rust toolchain with `wasm32-unknown-unknown` target
+- Rust toolchain of channel `1.81` with `wasm32-unknown-unknown` target
+- [`worker-build`](https://crates.io/crates/worker-build) ( run `cargo install worker-build` to install )
 - npm
-- `trunk` CLI ( installable by `cargo install trunk` )
+- `trunk` CLI ( run `cargo install trunk` to install )
 
-In addition, `wasm-opt` is recommended to be installed.
+In addition, `wasm-opt` ( pakcaged in [binaryen](https://github.com/WebAssembly/binaryen) ) is recommended to be installed for release build optimization.
 
 See https://github.com/kanarus/ohkami-yew-todo for a working example!
 
 ## Setup
 
 ```sh
-npm create cloudflare ./path/to/project-dir -- --template https://github.com/ohkami-rs/ohkami-templates/worker_yew_spa
+npm create cloudflare ＜project dir＞ -- --template https://github.com/ohkami-rs/ohkami-templates/worker_yew_spa
 ```
 ```sh
-cd ./path/to/project-dir
-```
-```sh
-npx wrangler login
+cd ＜project dir＞
 ```
 
-If you push the project to your GitHub repo, **You should add `wrangler.toml` into .gitignore**！
+If you push the project to your GitHub repo, **you should add `wrangler.toml` into .gitignore**！
 
 ## Local dev
 
@@ -35,6 +33,9 @@ trunk serve --watch src/ui --open
 
 ## Publish
 
+```sh
+npx wrangler login
+```
 ```sh
 npm run deploy
 ```
