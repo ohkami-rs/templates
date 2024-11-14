@@ -2,21 +2,22 @@
 
 ## Prerequisites
 
-- Rust toolchain of latest version with `wasm32-unknown-unknown` target
+- Rust toolchain of channel `1.81` with `wasm32-unknown-unknown` target
+- [`worker-build`](https://crates.io/crates/worker-build) ( run `cargo install worker-build` to install )
 - npm
 
-In addition, `wasm-opt` is recommended to be installed.
+In addition, `wasm-opt` ( pakcaged in [binaryen](https://github.com/WebAssembly/binaryen) ) is recommended to be installed for release build optimization.
 
 ## Setup
 
 ```sh
-npm create cloudflare ./path/to/project-dir -- --template https://github.com/ohkami-rs/ohkami-templates/worker
+npm create cloudflare ＜project dir＞ -- --template https://github.com/ohkami-rs/ohkami-templates/worker
 ```
 ```sh
-cd ./path/to/project-dir
+cd ＜project dir＞
 ```
 
-and if you push the project to your GitHub repo, **You should add `wrangler.toml` into .gitignore**！
+If you push the project to your GitHub repo, **you should add `wrangler.toml` into .gitignore**！
 
 ## Local dev
 
