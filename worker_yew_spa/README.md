@@ -8,7 +8,7 @@
 
 In addition, `wasm-opt` is recommended to be installed.
 
-See https://github.com/kana-rus/ohkami-yew-todo for a working example!
+See https://github.com/kanarus/ohkami-yew-todo for a working example!
 
 ## Setup
 
