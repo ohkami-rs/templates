@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Rust toolchain of channel `1.81` with `wasm32-unknown-unknown` target
+- Recent Rust toolchain of with `wasm32-unknown-unknown` target
 - [`worker-build`](https://crates.io/crates/worker-build) ( run `cargo install worker-build` to install )
 - npm
 
