@@ -10,6 +10,9 @@ crate-type = ["cdylib", "rlib"]
 opt-level = "s"
 
 [dependencies]
-console_error_panic_hook = { version = "0.1.7" }
-ohkami = { version = "0.20", features = ["rt_worker"] }
-worker = { version = "0.3" }
+console_error_panic_hook = "0.1"
+ohkami = { git = "https://github.com/ohkami-rs/ohkami", branch = "v0.21", features = ["rt_worker"] }
+worker = { version = "0.5" }
+
+[features]
+openapi = ["ohkami/openapi"]
