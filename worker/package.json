@@ -5,7 +5,7 @@
 	"scripts": {
 		"deploy": "export OHKAMI_WORKER_DEV='' && wrangler deploy",
 		"dev": "export OHKAMI_WORKER_DEV=1 && wrangler dev",
-		"openapi": "node -e \"$(curl -s https://raw.githubusercontent.com/ohkami-rs/ohkami/refs/heads/v0.21/scripts/workers_openapi.js)\" -- --features openapi"
+		"openapi": "node -e \"$(curl -s https://raw.githubusercontent.com/ohkami-rs/ohkami/refs/heads/main/scripts/workers_openapi.js)\" -- --features openapi"
 	},
 	"devDependencies": {
 		"wrangler": "^3.50"
