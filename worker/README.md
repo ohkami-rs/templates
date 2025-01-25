@@ -22,13 +22,21 @@ If you push the project to your GitHub repo, **you should add `wrangler.toml` in
 ## Local dev
 
 ```sh
+# if needed
+
+npm run openapi
+```
+
+```sh
 npm run dev
 ```
 
 ## Publish
+
 ```sh
 npx wrangler login
 ```
+
 ```sh
 npm run deploy
 ```
