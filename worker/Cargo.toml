@@ -11,7 +11,7 @@ opt-level = "s"
 
 [dependencies]
 console_error_panic_hook = "0.1"
-ohkami = { git = "https://github.com/ohkami-rs/ohkami", branch = "v0.21", features = ["rt_worker"] }
+ohkami = { version = "0.21", features = ["rt_worker"] }
 worker = { version = "0.5" }
 
 [features]
