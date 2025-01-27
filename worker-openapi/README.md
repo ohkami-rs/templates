@@ -1,4 +1,4 @@
-# Cloudflare Workers template
+# Cloudflare Workers + OpenAPI template
 
 ## Prerequisites
 
@@ -20,6 +20,10 @@ cd ＜project dir＞
 If you push the project to your GitHub repo, **you should add `wrangler.toml` into .gitignore**！
 
 ## Local dev
+
+```sh
+npm run openapi
+```
 
 ```sh
 npm run dev
