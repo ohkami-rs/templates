@@ -1,5 +1,5 @@
 [package]
-name    = "ohkami_worker"
+name    = "worker-openapi"
 version = "0.1.0"
 edition = "2021"
 
@@ -13,3 +13,9 @@ opt-level = "s"
 console_error_panic_hook = "0.1"
 ohkami = { version = "0.21", features = ["rt_worker"] }
 worker = { version = "0.5" }
+
+[features]
+openapi = ["ohkami/openapi"]
+
+# --no-default-features in release build
+default = ["openapi"]
