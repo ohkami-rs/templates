@@ -1,1 +1,1 @@
-./lambda/template/README.md
+./template/README.md
