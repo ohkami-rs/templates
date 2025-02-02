@@ -25,7 +25,7 @@ If you push the project to your GitHub repo, **you should add `wrangler.toml` in
 npm run dev
 ```
 
-## Publish
+## Deploy
 
 ```sh
 npx wrangler login

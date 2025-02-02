@@ -29,7 +29,7 @@ npm run openapi
 npm run dev
 ```
 
-## Publish
+## Deploy
 
 ```sh
 npx wrangler login
