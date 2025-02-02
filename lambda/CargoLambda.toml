@@ -1,0 +1,7 @@
+[template]
+disable_default_prompts = true
+render_files = ["CargoLambda.toml", "Cargo.toml"]
+
+[template.prompts.function_url]
+message = "Do you enable Function URL?"
+default = false

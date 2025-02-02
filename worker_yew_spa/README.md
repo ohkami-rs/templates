@@ -31,7 +31,7 @@ npm run dev
 trunk serve --watch src/ui --open
 ```
 
-## Publish
+## Deploy
 
 ```sh
 npx wrangler login

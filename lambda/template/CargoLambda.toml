@@ -1,0 +1,2 @@
+[deploy]
+enable_function_url = {{ function_url }}

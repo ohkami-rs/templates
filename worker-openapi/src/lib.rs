@@ -13,7 +13,7 @@ struct Message {
 
 async fn hello() -> JSON<Message> {
     JSON(Message {
-        message: "Hello, Workers!",
+        message: "Hello, Cloudflare Workers!",
     })
 }
 

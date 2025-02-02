@@ -9,6 +9,6 @@ async fn my_worker() -> Ohkami {
     console_error_panic_hook::set_once();
 
     Ohkami::new((
-        "/".GET(|| async {"Hello, world!"}),
+        "/".GET(|| async {"Hello, Cloudflare Workers!"}),
     ))
 }
