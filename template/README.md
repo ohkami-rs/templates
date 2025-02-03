@@ -54,7 +54,13 @@ See https://www.cargo-lambda.info/guide/cross-compiling.html for more detail.
 cargo lambda deploy
 ```
 
-If you're forgetful, always `cargo lambda build ＜flags＞ && cargo lambda deploy ＜flags＞` is recommended.
+If you're forgetful, always
+
+```
+cargo lambda build ＜flags＞ && cargo lambda deploy ＜flags＞
+```
+
+is recommended.
 
 #### credentials
 
@@ -62,6 +68,9 @@ This refers to your local AWS credentials, typically configured by `aws configur
 
 #### flags
 
-A lot of features are supported via flags ( for example multiple profiles by `--profile` ) .\
-`--enable-function-url` ( or `--disable-function-url` ) overrides the prompt configuration.\
+A lot of features are supported via flags ( for example multiple profiles by `--profile` ) , especially:
+
+* `--role ＜arn-of-a-iam-role＞` may be required after the role is created.
+* `--enable-function-url` ( or `--disable-function-url` ) overrides the prompt configuration.
+
 See https://www.cargo-lambda.info/commands/deploy.html for details.
