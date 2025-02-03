@@ -1,0 +1,15 @@
+# Configuration file for
+# ```
+# cargo lambda new --template https://github.com/ohkami-rs/ohkami-templates
+# ```
+# 
+# Project template is in [./template](/template) directory.
+# ( the directory name `template` is not configurable... )
+
+[template]
+disable_default_prompts = true
+render_files = ["CargoLambda.toml", "Cargo.toml"]
+
+[template.prompts.function_url]
+message = "Do you enable Function URL?"
+default = false
