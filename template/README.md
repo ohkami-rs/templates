@@ -18,7 +18,7 @@ cargo lambda new ＜project dir＞ --template https://github.com/ohkami-rs/ohkam
 cd ＜project dir＞
 ```
 
-Ohkami supports both `Function URLs` and `API Gateway`. The prompt configures if automatically create Function URL of this Lambda ( default: `false` (just Enter) ) by `CargoLambda.toml` file ( see https://www.cargo-lambda.info/guide/configuration.html for details ).
+Ohkami supports both `Function URLs` and `API Gateway`. The prompt configures if automatically create Function URL of this Lambda ( default: `true` (just Enter) ) by `CargoLambda.toml` ( see https://www.cargo-lambda.info/guide/configuration.html for details ).
 
 ## Local dev
 
@@ -68,7 +68,7 @@ This refers to your local AWS credentials, typically configured by `aws configur
 
 #### flags
 
-A lot of features are supported via flags ( for example multiple profiles by `--profile` ) , especially:
+A lot of configurations can be overrided via flags ( for example multiple profiles by `--profile` ) , especially:
 
 * `--role ＜arn-of-a-iam-role＞` may be required after the role is created.
 * `--enable-function-url` ( or `--disable-function-url` ) overrides the prompt configuration.
