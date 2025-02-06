@@ -4,7 +4,7 @@
 
 - Recent Rust toolchain
 - [`cargo lambda`](https://www.cargo-lambda.info/guide/installation.html)
-- AWS account with enough permissions ( at least `"lambda:CreateFunction"`, `"lambda:UpdateFunctionCode"`, `"lambda:GetFunction"` )
+- AWS account / IAM role with enough permissions ( at least `"lambda:CreateFunction"`, `"lambda:UpdateFunctionCode"`, `"lambda:GetFunction"` )
 - AWS Local Credentials ( e.g. set up by `aws configure` )
 
 In addition, on other than Linux, [`zig`](https://ziglang.org) or [`cross`](https://crates.io/crates/cross) is required for cross compiling ( see **Deploy** ) .
