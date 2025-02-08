@@ -3,10 +3,7 @@ name = "{{ project_name }}"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies.ohkami]
-git = "https://github.com/ohkami-rs/ohkami"
-features = ["rt_lambda"]
-
 [dependencies]
+ohkami = { version = "0.22", features = ["rt_lambda"] }
 lambda_runtime = "0.13"
 tokio = { version = "1", features = ["macros"] }
