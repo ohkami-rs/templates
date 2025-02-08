@@ -11,7 +11,7 @@ In addition, `wasm-opt` ( pakcaged in [binaryen](https://github.com/WebAssembly/
 ## Setup
 
 ```sh
-npm create cloudflare ＜project dir＞ -- --template https://github.com/ohkami-rs/ohkami-templates/worker
+npm create cloudflare ＜project dir＞ -- --template https://github.com/ohkami-rs/ohkami-templates/worker-openapi
 ```
 ```sh
 cd ＜project dir＞
