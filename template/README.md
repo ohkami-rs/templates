@@ -12,7 +12,7 @@ In addition, on other than Linux, [`zig`](https://ziglang.org) or [`cross`](http
 ## Setup
 
 ```sh
-cargo lambda new ＜project dir＞ --template https://github.com/ohkami-rs/ohkami-templates/lambda
+cargo lambda new ＜project dir＞ --template https://github.com/ohkami-rs/ohkami-templates
 > Do you enable Function URL?
 
 cd ＜project dir＞
