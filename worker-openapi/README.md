@@ -24,7 +24,6 @@ If you push the project to your GitHub repo, **you should add `wrangler.toml` in
 ```sh
 npm run openapi
 ```
-
 ```sh
 npm run dev
 ```
@@ -39,3 +38,10 @@ npx wrangler login
 npm run deploy
 ```
 If you register your workers.dev subdomain at this time, it takes some minutes for DNS records to update and it's good time to take a coffee break.
+
+## Flags
+
+`npm run openapi` flags :
+
+* `--out`, `-o` : Set output file ( default: `openapi.json` )
+* `--skip-login` : Skip `wrangler whoami` ( default: getting user info by `wrangler whoami` for production server )
