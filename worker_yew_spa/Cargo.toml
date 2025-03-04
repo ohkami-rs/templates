@@ -14,9 +14,13 @@ path = "src/front.rs"
 [profile.release]
 opt-level = "s"
 
+[dependencies.ohkami]
+git = "https://github.com/ohkami-rs/ohkami"
+branch = "v0.24"
+features = ["rt_worker"]
+
 [dependencies]
 console_error_panic_hook = { version = "0.1" }
-ohkami                   = { version = "0.23", features = ["rt_worker"] }
 worker                   = { version = "0.5" }
 yew                      = { version = "0.21", features = ["csr"] }
 web-sys                  = { version = "0.3",  features = ["Crypto"] }
