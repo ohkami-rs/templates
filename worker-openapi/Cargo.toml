@@ -16,7 +16,7 @@ features = ["rt_worker"]
 
 [dependencies]
 console_error_panic_hook = "0.1"
-worker = { version = "0.5" }
+worker = { version = "0.6" }
 
 [features]
 openapi = ["ohkami/openapi"]
