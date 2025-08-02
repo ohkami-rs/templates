@@ -11,8 +11,8 @@ struct Message {
     message: &'static str,
 }
 
-async fn hello() -> JSON<Message> {
-    JSON(Message {
+async fn hello() -> Json<Message> {
+    Json(Message {
         message: "Hello, Cloudflare Workers!",
     })
 }
