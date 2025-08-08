@@ -4,7 +4,7 @@ use ohkami::prelude::*;
 struct Bindings;
 
 #[ohkami::worker]
-async fn my_worker() -> Ohkami {
+async fn my_worker(b: Bindings) -> Ohkami {
     #[cfg(debug_assertions)]
     console_error_panic_hook::set_once();
 
