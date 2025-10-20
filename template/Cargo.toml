@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-ohkami = { version = "0.23", features = ["rt_lambda"] }
-lambda_runtime = "0.13"
+ohkami = { version = "0.24", features = ["rt_lambda"] }
+lambda_runtime = "0.14"
 tokio = { version = "1", features = ["macros"] }
